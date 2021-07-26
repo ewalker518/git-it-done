@@ -20,7 +20,6 @@ var getUserRepos = function (user) {
         }
     })
     .catch(function (error) {
-        // Notice this `.catch()` getting chained onto the end of the `.then()` method
         alert("Unable to connect to GitHub");
     });
 };
@@ -82,7 +81,6 @@ var displayRepos = function (repos, searchTerm) {
     } else {
         statusEl.innerHTML = "<i class='fas fa-check-square status-icon icon-success'></i>";
     }
-
-}
+};
 
 userFormEl.addEventListener("submit", formSubmitHandler);
